@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Parking
 {
-
+	// подготовка к собеседованию
     class Parking
     {
         public Parking(int placeTotal, IPrice price)
