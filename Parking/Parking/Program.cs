@@ -19,7 +19,24 @@ namespace Parking
             price.AddTariff(new Tariff("24-hour", 1440, 35));
 
             Parking parking = new Parking(ParkingPlace, price);
-            
+
+            parking.CarDroveInParking("AA2395KA");
+            parking.CarDroveInParking("AB7643CB");
+            parking.CarDroveInParking("AC1199MM");
+            parking.CarDroveInParking("CA8772EE");
+
+            parking.Pay("AA2395KA", 70, 20);
+
+            parking.Pay("CA8772EE", 30, 1);
+            parking.Pay("AB7643CB", 100, 12);
+
+            parking.CarLeftParking("AA2395KA");
+            parking.CarLeftParking("AB7643CB");
+            parking.CarLeftParking("CA8772EE");
+
+            parking.GetCars();
+
+            Console.ReadKey();
         }
     }
 }
